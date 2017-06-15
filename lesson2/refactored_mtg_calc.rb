@@ -9,8 +9,8 @@ end
 
 def valid_number?(str_amt)
   ((str_amt.to_i.to_s == str_amt) ||
-    (format("%.2f", str_amt.to_f.to_s) == str_amt)) &&
-      (str_amt.to_f > 0)
+  (format("%.2f", str_amt.to_f.to_s) == str_amt)) &&
+    (str_amt.to_f > 0)
 end
 
 def ask_for(mortgage_info)
@@ -59,7 +59,6 @@ loop do
     prompt("Not sure what you meant")
     break
   end
-
 end
 
 prompt(MESSAGES["thanks_bye"])
